@@ -5,8 +5,6 @@
 <table>
   <thead>
     <tr>
-      <th>Latitude</th>
-      <th>Longitude</th>
       <th>Address</th>
       <th>Hours</th>
       <th>Name</th>
@@ -18,8 +16,6 @@
   <tbody>
     <% @apartments.each do |apartment| %>
       <tr>
-        <td><%= apartment.latitude %></td>
-        <td><%= apartment.longitude %></td>
         <td><%= apartment.address %></td>
         <td><%= apartment.hours %></td>
         <td><%= apartment.name %></td>
@@ -35,7 +31,3 @@
 <br>
 
 <%= link_to 'New Apartment', new_apartment_path %>
-<!--
-<hr>
-
-<div id="googleMap" style="width: 300px; height: 300px;">someknfoernf</div> -->
